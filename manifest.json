@@ -1,0 +1,32 @@
+{
+   "manifest_version": 1,
+   "name": "一本词典",
+   "version": "0.0.1",
+
+   "description": "便捷小巧的翻译工具,集成多家翻译服务.",
+   "icons": {
+      "128": "dist/assets/icon128.png",
+      "16": "dist/assets/normal.png",
+      "48": "dist/assets/icon48.png"
+   },
+
+   "background": {
+      "scripts": [ "dist/service.js", "dist/background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "dist/assets/normal.png",
+      "default_popup": "dist/popup.html",
+      "default_title": "一本词典"
+   },
+   "content_scripts": [{
+      "all_frames": true,
+      "css": ["dist/style/page.css" ],
+      "js": [ "dist/app.js" ],
+      "matches": [ "<all_urls>" ],
+      "run_at": "document_start"
+   }],
+   "options_page": "dist/pages/options.html",
+   "minimum_chrome_version": "55.0.2883.75",
+   "permissions": [ "tabs", "contextMenus", "<all_urls>" ],
+   "web_accessible_resources": ["dist/assets/*.png"]
+}
