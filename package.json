@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["chrome"],
-  "author": "",
+  "keywords": ["chrome extensions", "dict", "dictionary", "translator"],
+  "author": "wmzy",
   "license": "ISC"
 }
