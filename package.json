@@ -1,11 +1,16 @@
 {
   "name": "a-dict",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "便捷小巧的翻译工具,集成多家翻译服务.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["chrome extensions", "dict", "dictionary", "translator"],
+  "keywords": [
+    "chrome extensions",
+    "dict",
+    "dictionary",
+    "translator"
+  ],
   "author": "wmzy",
   "license": "ISC"
 }
