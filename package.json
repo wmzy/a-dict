@@ -1,0 +1,33 @@
+{
+  "name": "a-dict",
+  "version": "0.0.1",
+  "description": "便捷小巧的翻译工具,集成多家翻译服务.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint src scripts",
+    "stylelint": "stylelint \"src/**/*.css\"",
+    "lint": "npm run eslint && npm run stylelint",
+    "clean": "babel-node scripts/run clean --harmony-async-await",
+    "copy": "babel-node scripts/run copy --harmony-async-await",
+    "build": "npm run clean && webpack && npm run copy"
+  },
+  "keywords": [
+    "chrome extensions",
+    "dict",
+    "dictionary",
+    "translator"
+  ],
+  "author": "wmzy",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-node7": "^1.4.0",
+    "bluebird": "^3.4.7",
+    "cpy": "^5.0.0",
+    "del": "^2.2.2",
+    "eslint": "^3.12.2",
+    "gaze": "^1.1.2",
+    "stylelint": "^7.7.0",
+    "webpack": "^2.1.0-beta.27"
+  }
+}
